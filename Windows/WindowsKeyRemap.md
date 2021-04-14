@@ -6,21 +6,25 @@
 
 2. Create a remapkey.ahk file and copy the following script into the file
 
-   `CapsLock & h::`
-   `Send {Left}`
-   `return`
+   ```
+   CapsLock & h::
+   Send {Left}
+   return
+   
+   CapsLock & l::
+   Send {Right}
+   return
+   
+   CapsLock & k::
+   Send {Up}
+   return
+   
+   CapsLock & j::
+   Send {Down}
+   return
+   ```
 
-   `CapsLock & j::`
-   `Send {Right}`
-   `return`
-
-   `CapsLock & k::`
-   `Send {Up}` 
-   `return`
-
-   `CapsLock & l::`
-   `Send {Down}` 
-   `return`
+   
 
 3. right-click to compile the script to exe file, and click the exe to execute
 
