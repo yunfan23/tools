@@ -1,17 +1,17 @@
 # Personal Tools Summary
 
-1. Windows Key Remap from Arrow Keys to CapsLock + hjkl
+1. Windows Based Application Tips and Tricks
 
-   [Windows Keys Remap](Windows/WindowsKeyRemap.md)
+   [Windows](Windows)
 
-2. Windows Handy Applications and Tips
+3. Mac Based Application Tips and Tricks
 
-   [Windows Handy Apps](Windows/HandyWinApps.md)
+   [Mac](Mac)
 
-3. Mac Handy Applications and Tips
+4. Linux Based Application Tips and Tricks
 
-   [Mac Handy Apps](Mac/HandyMacApps.md)
+   [Linux](Linux)
 
-4. VSCode Tricks and Tips
+4. Misc Application Tips and Tricks
 
-   [VSCode Tips](Misc/VSCodeTricks.md)
+   [Misc](Misc)
