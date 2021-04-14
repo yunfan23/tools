@@ -2,7 +2,7 @@
 
 1. Windows Key Remap from Arrow Keys to CapsLock + hjkl
 
-   [Windows Key Remap]: (./WindowsKeyRemap.md)
+   [Windows Key Remap]: WindowsKeyRemap.md	"ArrowKeysRemap"
 
    
 
