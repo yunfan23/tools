@@ -1,0 +1,114 @@
+{
+    "python.pythonPath": "python",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "80"
+    ],
+    "python.showStartPage": false,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=cv2"
+    ],
+    "python.linting.flake8Args": [ "--per-file-ignores=\"init.py:F401\"" ],
+    "python.languageServer": "Pylance",
+
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontSize": 20,
+    // disable quickopen when terminal is focused
+    "terminal.integrated.commandsToSkipShell": [
+        // Ensure the toggle sidebar visibility keybinding skips the shell
+        "workbench.action.toggleSidebarVisibility",
+        // Send quick open's keybinding to the shell
+        "-workbench.action.quickOpen"
+    ],
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    "debug.console.fontSize": 20,
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "editor.fontFamily": "'DejaVu Sans Mono',  Consolas, 'Courier New', monospace",
+    "editor.lineHeight": 29,
+    "editor.fontSize": 20,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": false,
+    "editor.rulers": [80],
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 80,
+    "editor.minimap.enabled": false,
+    "editor.highlightActiveIndentGuide": false,
+    "editor.lineNumbers": "on",
+    "editor.suggestSelection": "first",
+
+    "remote.SSH.remotePlatform": {
+        "gpu05": "linux",
+        "gpu06": "linux",
+        "ntu-02": "linux",
+        "ntu-03": "linux"
+    },
+    "remote.autoForwardPorts": false,
+
+    // hide status and activity bar
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    // do not open default setting pane
+    "workbench.settings.useSplitJSON": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
+    // vim settings
+    // enable vim surround
+    "vim.surround": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    // prevent j/k open fold
+    "vim.foldfix": true,
+    // enable the system clip board
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        }
+    ],
+
+    // do not over-write the dfault settings
+    "vim.handleKeys": {
+        "<C-w>": false, // close windows
+        "<C-t>": false, // goto symbol
+        "<C-r>": false, // recently open
+        "<C-n>": false, // new file
+        "<C-b>": false, // toggle explorer
+        "<C-k>": false, // system key prefix
+        "<C-c>": false, // copy
+        "<C-v>": false  // paste
+    },
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.visible": false,
+}

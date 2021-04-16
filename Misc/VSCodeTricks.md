@@ -14,3 +14,10 @@
 },
 ```
 
+2. Personal VSCode Settings
+
+   [settings](settings.json)
+
+   [keybindings](keybindings.json)
+
+   

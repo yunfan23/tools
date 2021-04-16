@@ -1,0 +1,23 @@
+[
+    {
+        // enable ctrl up/down to toggle between terminals
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+q",
+        "command": "workbench.action.toggleMaximizedPanel",
+        // "when": "!terminalFocus"
+    },
+    {
+        // open json setting file directly
+        "key": "ctrl+k s",
+        "command": "workbench.action.openSettingsJson",
+    }
+]
