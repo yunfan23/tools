@@ -23,3 +23,5 @@
    A phoney target is on that is not really the name of a file. To use a phoney target is to avoid the conflict with a  file of the same name and to improve performance.
 
    make has the ability to build targets in parallel
+
+   @ is to make the command sliently
