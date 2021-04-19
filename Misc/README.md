@@ -11,3 +11,8 @@
 3. Makefile
 
    [Make](Makefile.md)
+   
+4. Vim Tips
+
+   [Vim](VimTips.md)
+
