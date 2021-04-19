@@ -20,4 +20,7 @@
 
    [keybindings](keybindings.json)
 
-   
+3. Navigation
+
+   ^+-` and `^+Shift+-` to navigation forward and backward
+
