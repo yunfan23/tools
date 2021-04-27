@@ -5,3 +5,9 @@
    readlink -f $(which cc) $(which gcc) $(which g++) /usr/bin/gcc-5 /usr/bin/gcc-5 /usr/bin/g++-5
 
    g++ will link libstdc++ by default, while gcc won't.
+
+3. remove zsh
+   `sudo apt-get --purge remove zsh`
+
+4. change default shell
+   `chsh -s /bin/bash YOURNAME`
