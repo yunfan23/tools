@@ -11,3 +11,7 @@
 3. Windows Key Mappings
 
    [Key Mappings](WindowsKeyRemap.md)
+
+4. Windows Terminal Settings
+
+   [Windows Terminal](WindowsTerminal.md)
