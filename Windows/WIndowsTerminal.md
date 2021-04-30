@@ -3,12 +3,12 @@
 - copy the profile setting from existing profile
 - use command below to generate guid (globally unique identifier) and change the guid
   - `uuidgen` in linux terminal or
-  - `[guid]::NewGuid()` in powershell 
-- change commandLine to 
+  - `[guid]::NewGuid()` in powershell
+- change commandLine to
   - `ssh username@host` or
   - `ssh -t username@hostname \"cd path && exec bash -l\""`
 
-### The following block is the template of a profile
+## The following block is the template of a profile
 ```
 {
     "bellStyle": "none",
