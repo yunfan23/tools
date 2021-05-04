@@ -28,3 +28,8 @@
 :retab
 
 1. :set cmdheight=1 to set command status bar to height 1
+
+
+# Fix
+- startify: Can't read viminfo file. Read :help startify-faq-02
+  - remove ~/.viminfo file to solve the problem
