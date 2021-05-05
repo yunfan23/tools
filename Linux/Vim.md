@@ -4,7 +4,7 @@
 
 1. Download **nvim.appimage**
 
-2. Run 
+2. Run
 
    ```
    chmod u+x nvim.appimage && ./nvim.appimage
@@ -33,3 +33,9 @@
 # Fix
 - startify: Can't read viminfo file. Read :help startify-faq-02
   - remove ~/.viminfo file to solve the problem
+
+
+## move to first none space char
+^ to move to current line \
+\- to move to previous line \
+\+ to move to next line
