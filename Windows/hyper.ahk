@@ -1,3 +1,6 @@
+;; disabe CapsLock
+SetCapsLockState, alwaysoff
+
 CapsLock & h::
 Send {Left}
 return
