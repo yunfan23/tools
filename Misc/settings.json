@@ -1,20 +1,24 @@
 {
     "python.pythonPath": "python",
     "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [ 
+        "--per-file-ignores=\"init.py:F401\"" 
+    ],
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=cv2",
+    ],
     "python.formatting.blackArgs": [
         "--line-length",
         "80"
     ],
     "python.showStartPage": false,
-    "python.linting.pylintArgs": [
-        "--extension-pkg-whitelist=cv2"
-    ],
-    "python.linting.flake8Args": [ "--per-file-ignores=\"init.py:F401\"" ],
     "python.languageServer": "Pylance",
 
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontSize": 16,
     // disable quickopen when terminal is focused
     "terminal.integrated.commandsToSkipShell": [
         // Ensure the toggle sidebar visibility keybinding skips the shell
@@ -22,26 +26,44 @@
         // Send quick open's keybinding to the shell
         "-workbench.action.quickOpen"
     ],
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
-    "debug.console.fontSize": 20,
+    "debug.console.fontSize": 16,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
-    "editor.fontFamily": "'DejaVu Sans Mono',  Consolas, 'Courier New', monospace",
-    "editor.lineHeight": 29,
-    "editor.fontSize": 20,
+    "editor.codeActionsOnSave": {
+        // autoformat import on save
+        "source.organizeImports": true
+    },
+    "editor.lineHeight": 28,
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": 1,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "none",
     "editor.formatOnSave": false,
-    "editor.rulers": [80],
+    // show vertical line at xx char
+    "editor.rulers": [
+        // 80
+    ],
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 80,
     "editor.minimap.enabled": false,
     "editor.highlightActiveIndentGuide": false,
     "editor.lineNumbers": "on",
     "editor.suggestSelection": "first",
+    // disable intellisense auto show help when hovering
+    "editor.hover.enabled": false,
+
+    // neovim settings
+    "vscode-neovim.neovimExecutablePaths.linux": "/home/yunfan/nvim/nightly/squashfs-root/usr/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/yunfan/.config/nvim/init.vim",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/Users/yunfan/nvim/nightly/nvim-osx64/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/yunfan/.config/nvim/init.vim",
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\Yunfan\\Documents\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\Yunfan\\AppData\\Local\\nvim\\init.vim",
 
     "remote.SSH.remotePlatform": {
         "gpu05": "linux",
@@ -51,9 +73,7 @@
     },
     "remote.autoForwardPorts": false,
 
-    // hide status and activity bar
-    "workbench.statusBar.visible": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
     // do not open default setting pane
     "workbench.settings.useSplitJSON": false,
@@ -64,51 +84,13 @@
             "filenamePattern": "*.ipynb"
         }
     ],
-
-    // vim settings
-    // enable vim surround
-    "vim.surround": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.hlsearch": true,
-    // prevent j/k open fold
-    "vim.foldfix": true,
-    // enable the system clip board
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.insertModeKeyBindings": [
-        {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "after": [
-                "d",
-                "d"
-            ]
-        }
-    ],
-
-    // do not over-write the dfault settings
-    "vim.handleKeys": {
-        "<C-w>": false, // close windows
-        "<C-t>": false, // goto symbol
-        "<C-r>": false, // recently open
-        "<C-n>": false, // new file
-        "<C-b>": false, // toggle explorer
-        "<C-k>": false, // system key prefix
-        "<C-c>": false, // copy
-        "<C-v>": false  // paste
-    },
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showTabs": true,
+    "workbench.statusBar.visible": false,
 
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vsintellicode.features.python.deepLearning": "enabled",
+
+    "window.menuBarVisibility": "compact",
     "breadcrumbs.enabled": false,
-    "workbench.activityBar.visible": false,
 }

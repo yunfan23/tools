@@ -19,5 +19,11 @@
         // open json setting file directly
         "key": "ctrl+k s",
         "command": "workbench.action.openSettingsJson",
+    },
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
     }
 ]
