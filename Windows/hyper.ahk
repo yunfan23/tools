@@ -1,12 +1,12 @@
 ;; disabe CapsLock
-SetCapsLockState, alwaysoff
+;; SetCapsLockState, alwaysoff
 
 CapsLock & h::
 Send {Left}
 return
 
 CapsLock & l::
-Send {Right}
+Send {Right} 
 return
 
 CapsLock & k::
@@ -29,6 +29,11 @@ CapsLock & x::
 Send ^{x}
 return
 
+CapsLock & s::
+Send ^{s}
+return
+
+;; Always on top setting
 ^+1::  Winset, Alwaysontop, , A
 CapsLock & a:: Winset, Alwaysontop, , A
 
