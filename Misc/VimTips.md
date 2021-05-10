@@ -16,3 +16,15 @@
 - `ys$"` to add " from current position to end of line
 - `yss)` to add ) for entire line
 - Opening braces add extra spaces, but closing ones do not.
+
+## vim coc tips
+```
+<space>a – coc dialogistic
+<space>c – coc command
+<space>f – coc fix
+<space>rn – coc rename
+alt oO insert mode insert a new line above or below
+
+alt+ create a new split
+K function help
+```
