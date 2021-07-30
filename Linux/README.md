@@ -2,9 +2,7 @@
 
 1. Linux Based Application Tips and Tricks
 
-   [CentOS](CentOS.md)
-
-   [Debian](Debian.md)
+   [Linux](Linux.md)
 
 2. Scripts
 

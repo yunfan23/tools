@@ -60,3 +60,24 @@ yum install yum-utils
 yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
 yum install ripgrep
 ```
+
+
+## Safe-rm
+
+```
+sudo apt update
+sudo apt install safe-rm
+ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
+```
+
+Both of these configuration files can contain a list of important files or directories (one per line):
+/etc/safe-rm.conf 
+
+~/.config/safe-rm
+
+If both of these are empty, a default list of important paths will be used.
+/usr/lib/*
+
+r to repeat last command
+
+Process marked as <defunct> are called zombie processes. The system keeps them in that defunct state to allow their parent to read their status after they have finished running.
